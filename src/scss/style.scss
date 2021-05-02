@@ -1,0 +1,109 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu Mono", monospace;
+  box-sizing: border-box;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.container {
+  background-color: #bbdfc8;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 320px;
+  height: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.last {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit {
+  background-color: #eb5e0b;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.712);
+  padding: 10px;
+  &__close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+  }
+  &__body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+    background-color: #5eaaa8;
+    max-width: 700px;
+    width: 100%;
+    max-height: 320px;
+    height: 100%;
+  }
+  &__content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.text{
+  font-size: 16px;
+  padding: 6px 15px;
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+}
+
+.border{
+  border: 3px solid crimson;
+}
+
+@import "media";
